@@ -4,8 +4,8 @@
     <head>
         <meta charset="utf-8">
         <title>Sass revision</title>
-        <link rel="stylesheet" href="./static/external/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" href="./static/external/font-awesome-4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/static/external/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/static/external/font-awesome-4.7.0/css/font-awesome.css">
         <link rel="stylesheet" media="screen and (max-width: 1200px)" href="smallscreen.css" type="text/css" />
         <link rel="stylesheet" media="screen and (max-width: 770px)" href="smallscreen.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
@@ -14,6 +14,7 @@
         <header>
             <nav>
                 <ul>
+
                     <li><a href="#">catalog</a></li>
                     <li><a href="#">about us</a></li>
                     <li><a href="#">Stores</a></li>
