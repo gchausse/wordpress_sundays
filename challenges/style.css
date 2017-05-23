@@ -1,0 +1,186 @@
+/*
+Theme Name: challenges
+Theme URI:
+Author:
+Author URI:
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: challenges
+Tags:
+
+*/
+.container-fluid {
+  margin: 0;
+  padding: 0; }
+
+header {
+  text-align: center;
+  background-color: #281400;
+  color: white; }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    min-height: 5em; }
+    header nav ul li {
+      list-style: none; }
+      header nav ul li a {
+        color: #b1b1b1;
+        margin: 0 1em;
+        text-transform: capitalize;
+        font-size: 1.5em; }
+    header nav ul li:last-child {
+      margin-left: 33%; }
+  header button {
+    background-color: #a28f61;
+    border-radius: 10px;
+    color: white;
+    height: 4em;
+    width: 15%;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 18em;
+    text-transform: uppercase; }
+  header h1 {
+    font-size: 5em;
+    margin-top: 2em;
+    text-transform: uppercase; }
+  header h2 {
+    font-size: 3em;
+    width: 8em;
+    margin: 0 auto;
+    margin-bottom: 2em; }
+
+.buy {
+  color: #a28f61; }
+
+.onsale {
+  color: #ffcc00; }
+
+.soldout {
+  color: #8d9198; }
+
+main {
+  width: 90%;
+  margin: auto; }
+  main .catalog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  main h3 {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 3em 0;
+    font-size: 2em; }
+  main section {
+    box-shadow: 0px 0px 2px 3px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em; }
+  main img {
+    align-self: stretch;
+    width: 250px; }
+  main h4 {
+    text-transform: uppercase; }
+  main p {
+    text-transform: capitalize; }
+  main span {
+    margin-bottom: 3em; }
+  main article {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 250px; }
+    main article button {
+      margin: 1em 0;
+      width: 20%;
+      border: 1px solid white;
+      background-color: #0f3e57;
+      text-transform: uppercase;
+      color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 4px 5px grey; }
+  main .imgproduit {
+    float: left; }
+
+footer {
+  background-color: #0f3e57;
+  padding-top: 5em; }
+  footer .row {
+    width: 90%;
+    margin: auto; }
+  footer h5 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 2em;
+    margin: 1em auto; }
+  footer section ul {
+    padding: 0;
+    margin: auto; }
+  footer section li {
+    color: #b1b1b1;
+    list-style: none;
+    text-transform: capitalize;
+    margin: 1em 0; }
+  footer section li a {
+    color: #b1b1b1; }
+  footer i {
+    margin-right: 1em; }
+  footer button {
+    border: 1px solid white;
+    background-color: #0f3e57;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 3px;
+    padding: 0.5em; }
+
+@media screen and (max-width: 1200px) {
+  header nav ul li:last-child {
+    margin-left: 20%; } }
+@media screen and (max-width: 770px) {
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    min-height: 5em; }
+    header nav ul li {
+      list-style: none; }
+      header nav ul li a {
+        color: #b1b1b1;
+        margin: 0 1em;
+        text-transform: capitalize;
+        font-size: 1.5em; }
+    header nav ul li:last-child {
+      align-self: flex-end;
+      margin-left: 0; }
+  header button {
+    width: 60%;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 18em;
+    text-transform: uppercase;
+    background-color: #a28f61;
+    border-radius: 10px;
+    color: white;
+    height: 4em; }
+
+  main article button {
+    width: 100%;
+    margin: 0 auto; }
+  main img {
+    width: 100%;
+    margin: auto; }
+
+  footer {
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
