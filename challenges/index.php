@@ -1,6 +1,8 @@
 <?php
 /**
+ *
  * The main template file
+ *
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -15,10 +17,13 @@
  ?>
 
 <main>
+    <?php
+    $blog = get_posts($arrayName = array('category_name' => 'blog', ));
+    ?>
+    <a href="<?php  echo get_permalink()?>">BLOG</a>
     <h3>spring summer 2017</h3>
     <div class="catalog">
         <?php
-
             $myposts = get_posts($arrayName = array('category_name' => 'produits', ));
                 foreach ($myposts as $post):
                     ?>
@@ -29,6 +34,7 @@
                             foreach ($categories as $cat) :
                                 if ($cat->name != 'produits'):?>
                                     <h4 class="<?php echo $cat->slug?>">status: <?php echo $cat->name;?></h4>
+                                    <a href="<?php echo get_permalink($post->id) ?>">voir plus</a>
                                     <?php
                                 endif;
                             endforeach;
@@ -38,8 +44,6 @@
                     <?php
                 endforeach
              ?>
-
-
     </div>
 </main>
 
