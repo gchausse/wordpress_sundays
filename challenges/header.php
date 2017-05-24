@@ -9,16 +9,16 @@
         <link rel="stylesheet" media="screen and (max-width: 1200px)" href="smallscreen.css" type="text/css" />
         <link rel="stylesheet" media="screen and (max-width: 770px)" href="smallscreen.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+        <?php  ?>
     </head>
     <body>
         <header>
             <nav>
                 <ul>
-
-                    <li><a href="#">catalog</a></li>
+                    <li><a href="<?php  echo get_home_url()?>">catalog</a></li>
                     <li><a href="#">about us</a></li>
                     <li><a href="#">Stores</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="<?php  echo get_page_link(50)?>">blog</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-zoom-out"></i></a></li>
                 </ul>
             </nav>

@@ -13,14 +13,12 @@
          <div class="container-fluid">
              <div class="row">
                  <div class="col-xs-2">
-                     <?php the_post_thumbnail() ;?>
+                     <?php the_post_thumbnail(array(400, 500)) ;?>
                  </div>
                  <div class="col-xs-10">
                      <article>
                          <p>posted: <?php echo get_post_field('post_date');?></p>
                          <p><?php echo get_post_field('post_content');?> </p>
-                         <h4>prix: <?php echo get_post_meta($post->ID, 'price', true);?></h4>
-                         <button type="button" name="button">Ajouter au panier</button>
                      </article>
 
                  </div>
@@ -30,7 +28,7 @@
     endforeach
     ?>
  </main>
-    
+
  <?php
  get_footer();
   ?>

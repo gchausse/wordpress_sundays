@@ -17,14 +17,11 @@
  ?>
 
 <main>
-    <?php
-    $blog = get_posts($arrayName = array('category_name' => 'blog', ));
-    ?>
-    <a href="<?php  echo get_permalink()?>">BLOG</a>
+
     <h3>spring summer 2017</h3>
     <div class="catalog">
         <?php
-            $myposts = get_posts($arrayName = array('category_name' => 'produits', ));
+            $myposts = get_posts($arrayName = array('category_name' => 'produits','posts_per_page'=>'-1' ));
                 foreach ($myposts as $post):
                     ?>
                     <section>
